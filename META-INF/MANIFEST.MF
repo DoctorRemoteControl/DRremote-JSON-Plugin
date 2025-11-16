@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: DRremote JSON Plugin
+Bundle-SymbolicName: de.drremote.jsonplugin;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: de.drremote.jsonplugin.Activator
+Bundle-Vendor: DRremote
+Bundle-RequiredExecutionEnvironment: JavaSE-21
+Bundle-ActivationPolicy: lazy
+Require-Bundle: 
+ org.eclipse.core.runtime,
+ org.eclipse.ui,
+ org.eclipse.ui.editors,
+ org.eclipse.ui.ide,
+ org.eclipse.ui.workbench,
+ org.eclipse.ui.workbench.texteditor,
+ org.eclipse.jface,
+ org.eclipse.jface.text,
+ org.eclipse.equinox.preferences,
+ org.eclipse.core.resources,
+ org.eclipse.ui.views
+Bundle-ClassPath: .,
+ lib/jackson-core-2.17.2.jar,
+ lib/jackson-annotations-2.17.2.jar,
+ lib/jackson-databind-2.17.2.jar
